@@ -3,7 +3,7 @@ export type ValidSkills =
   | "React"
   | "GraphQL"
   | "Nest.js"
-  | "express.js"
+  | "Express.js"
   | "Node.js"
   | "MongoDB"
   | "Typescript"
@@ -52,15 +52,23 @@ export type ValidSkills =
   | "PyTorch"
   | "Spring Boot"
   | "Laravel"
+  | "SSO (LDAP, OKTA)"
+  | "SAML 2.0"
+  | "Chart.js"
   | "PHP";
 
 export type ValidCategory =
   | "Full Stack"
   | "Frontend"
+  | "Real-Time"
+  | "MERN"
   | "Backend"
+  | "API"
   | "UI/UX"
   | "Web Dev"
   | "Mobile Dev"
+  | "Analytics"
+  | "Data"
   | "3D Modeling";
 
 export type ValidExpType = "Personal Project" | "Professional";
@@ -71,5 +79,5 @@ export type ValidPages =
   | "experience"
   | "career"
   | "contact"
-  | "contributions"
+  // | "contributions"
   | "resume";

@@ -17,11 +17,11 @@ import { pagesConfig } from "@/config/pages";
 import { siteConfig } from "@/config/site";
 import { featuredSkills } from "@/config/skills";
 import { cn } from "@/lib/utils";
-import namanImg from "@/public/naman-img.jpg";
+import majidImg from "@/public/majid-img.png";
 
 export const metadata: Metadata = {
-  title: `${pagesConfig.home.metadata.title} | Modern Next.js Developer Portfolio Template`,
-  description: `${pagesConfig.home.metadata.description} This open-source Next.js portfolio template is customizable to showcase your skills and projects.`,
+  title: `${pagesConfig.home.metadata.title} | Backend-Focused Full Stack Developer`,
+  description: `${pagesConfig.home.metadata.description} Majid Niyaz's developer portfolio — showcasing expertise in building scalable, high-concurrency systems with Node.js, TypeScript, PostgreSQL, and Redis. Explore real-time analytics projects, automation tools, and clean backend architecture.`,
   alternates: {
     canonical: siteConfig.url,
   },
@@ -74,12 +74,12 @@ export default function IndexPage() {
       <section className="space-y-6 pb-8 pt-6 mb-0 md:pb-12 md:py-20 lg:py-32 h-screen flex items-center">
         <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center -mt-20">
           <Image
-            src={namanImg}
+            src={majidImg}
             height={100}
             width={100}
             sizes="100vw"
             className="bg-primary rounded-full mb-0 h-auto md:mb-2 w-[60%] max-w-[16rem] border-8 border-primary"
-            alt="Naman Barkiya - Full Stack Developer Portfolio"
+            alt="Majid Niyaz - Full Stack Developer Portfolio"
             priority
           />
           <AnimatedText
@@ -87,19 +87,18 @@ export default function IndexPage() {
             delay={0.2}
             className="font-heading text-3xl sm:text-5xl md:text-6xl lg:text-7xl"
           >
-            Naman Barkiya
+            Majid Niyaz
           </AnimatedText>
           <AnimatedText
             as="h3"
             delay={0.4}
             className="font-heading text-base sm:text-xl md:text-xl lg:text-2xl"
           >
-            Full Stack Developer
+            Backend-Focused Full Stack Developer
           </AnimatedText>
           <div className="mt-4 max-w-[42rem] text-center">
             <p className="leading-normal text-muted-foreground text-sm sm:text-base">
-              Open-source Next.js portfolio template. Fork this on GitHub to
-              create your own developer portfolio.
+              Majid Niyaz's developer portfolio — showcasing expertise in building scalable, high-concurrency systems with Node.js, TypeScript, PostgreSQL, and Redis. Explore real-time analytics projects, automation tools, and clean backend architecture..
             </p>
           </div>
 
@@ -109,7 +108,7 @@ export default function IndexPage() {
                 href={"https://github.com/namanbarkiya"}
                 target="_blank"
                 className={cn(buttonVariants({ size: "lg" }))}
-                aria-label="View Naman Barkiya's GitHub profile"
+                aria-label="View Majid Niyaz's GitHub profile"
               >
                 <Icons.gitHub className="w-4 h-4 mr-2" /> GitHub
               </Link>
@@ -124,7 +123,7 @@ export default function IndexPage() {
                     size: "lg",
                   })
                 )}
-                aria-label="Contact Naman Barkiya"
+                aria-label="Contact Majid Niyaz"
               >
                 <Icons.contact className="w-4 h-4 mr-2" /> Contact
               </Link>
@@ -207,37 +206,7 @@ export default function IndexPage() {
                     </p>
                 </div> */}
       </AnimatedSection>
-      <AnimatedSection
-        direction="down"
-        className="container space-y-6 bg-muted py-10 my-14"
-        id="contributions"
-      >
-        <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
-          <AnimatedText
-            as="h2"
-            className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl"
-          >
-            {pagesConfig.contributions.title}
-          </AnimatedText>
-          <AnimatedText
-            as="p"
-            delay={0.2}
-            className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7"
-          >
-            {pagesConfig.contributions.description}
-          </AnimatedText>
-        </div>
-        <div className="mx-auto justify-center gap-4 md:w-full lg:grid-cols-3">
-          <ContributionCard contributions={featuredContributions} />
-        </div>
-        <AnimatedText delay={0.4} className="flex justify-center">
-          <Link href="/contributions">
-            <Button variant={"outline"} className="rounded-xl">
-              <Icons.chevronDown className="mr-2 h-4 w-4" /> View All
-            </Button>
-          </Link>
-        </AnimatedText>
-      </AnimatedSection>
+  
     </ClientPageWrapper>
   );
 }

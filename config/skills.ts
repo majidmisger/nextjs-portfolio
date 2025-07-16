@@ -9,152 +9,94 @@ export interface skillsInterface {
 
 export const skillsUnsorted: skillsInterface[] = [
   {
-    name: "Next.js",
-    description:
-      "Effortlessly build dynamic apps with routing, layouts, loading UI, and API routes.",
-    rating: 5,
-    icon: Icons.nextjs,
-  },
-  {
-    name: "React",
-    description:
-      "Craft interactive user interfaces using components, state, props, and virtual DOM.",
-    rating: 5,
-    icon: Icons.react,
-  },
-  {
-    name: "GraphQL",
-    description:
-      "Fetch data precisely with a powerful query language for APIs and runtime execution.",
-    rating: 4,
-    icon: Icons.graphql,
-  },
-  {
-    name: "Nest.js",
-    description:
-      "Create scalable and modular applications with a progressive Node.js framework.",
-    rating: 4,
-    icon: Icons.nestjs,
-  },
-  {
-    name: "express.js",
-    description:
-      "Build web applications and APIs quickly using a fast, unopinionated Node.js framework.",
-    rating: 5,
-    icon: Icons.express,
-  },
-  {
     name: "Node.js",
-    description:
-      "Run JavaScript on the server side, enabling dynamic and responsive applications.",
+    description: "Backend JavaScript runtime used to build scalable, high-performance APIs.",
     rating: 5,
     icon: Icons.nodejs,
   },
   {
-    name: "MongoDB",
-    description:
-      "Store and retrieve data seamlessly with a flexible and scalable NoSQL database.",
-    rating: 5,
-    icon: Icons.mongodb,
-  },
-  {
-    name: "Typescript",
-    description:
-      "Enhance JavaScript with static types, making code more understandable and reliable.",
+    name: "TypeScript",
+    description: "Typed superset of JavaScript improving code quality and maintainability.",
     rating: 5,
     icon: Icons.typescript,
   },
   {
-    name: "Javascript",
-    description:
-      "Create interactive and dynamic web experiences with the versatile scripting language.",
+    name: "PostgreSQL",
+    description: "Advanced relational database used for analytics and high-concurrency APIs.",
     rating: 5,
-    icon: Icons.javascript,
+    icon: Icons.add, //TODO: Add PostgreSQL icon,
   },
   {
-    name: "HTML 5",
-    description:
-      "Structure web content beautifully with the latest version of HyperText Markup Language.",
-    rating: 4,
-    icon: Icons.html5,
+    name: "Redis",
+    description: "In-memory datastore used for caching and reducing backend latency.",
+    rating: 5,
+    icon: Icons.add, //TODO: A,
   },
   {
-    name: "CSS 3",
-    description:
-      "Style web pages creatively with the latest iteration of Cascading Style Sheets.",
-    rating: 4,
-    icon: Icons.css3,
+    name: "Express.js",
+    description: "Minimal and fast Node.js web framework used for REST APIs.",
+    rating: 5,
+    icon: Icons.express,
   },
   {
-    name: "React Native",
-    description:
-      "Develop cross-platform mobile apps using React for consistent and engaging experiences.",
+    name: "GraphQL",
+    description: "Declarative API query language used to fetch only what you need.",
     rating: 4,
+    icon: Icons.graphql,
+  },
+  {
+    name: "React",
+    description: "Frontend library for building interactive UIs with components and hooks.",
+    rating: 3,
     icon: Icons.react,
   },
   {
     name: "Angular",
-    description:
-      "Build dynamic web apps with a TypeScript-based open-source framework by Google.",
+    description: "Component-based frontend framework by Google (used in older projects).",
     rating: 3,
     icon: Icons.angular,
   },
   {
-    name: "Redux",
-    description:
-      "Manage app state effectively using a predictable and centralized state container.",
+    name: "Docker",
+    description: "Tool for packaging and deploying containerized applications in all environments.",
     rating: 4,
-    icon: Icons.redux,
+    icon: Icons.add, //TODO: Add Docker icon,
   },
   {
-    name: "Socket.io",
-    description:
-      "Enable real-time, bidirectional communication between clients and servers effortlessly.",
+    name: "Jenkins",
+    description: "CI/CD tool for automating testing and deployment pipelines.",
     rating: 3,
-    icon: Icons.socketio,
+    icon: Icons.add, //TODO: Add Jenkins icon
   },
   {
-    name: "Material UI",
-    description:
-      "Create stunning and responsive UIs with a popular React UI framework.",
-    rating: 4,
-    icon: Icons.mui,
+    name: "Git",
+    description: "Version control system for managing and collaborating on codebases.",
+    rating: 5,
+    icon: Icons.add, //TODO: Add Git icon,
   },
-
+  {
+    name: "HTML5",
+    description: "Markup language for structuring content on the web.",
+    rating: 4,
+    icon: Icons.html5,
+  },
+  {
+    name: "CSS3",
+    description: "Styling language for designing responsive and engaging web layouts.",
+    rating: 4,
+    icon: Icons.css3,
+  },
   {
     name: "Tailwind CSS",
-    description:
-      "Design beautiful, modern websites faster with a utility-first CSS framework.",
+    description: "Utility-first CSS framework to design clean and modern UIs fast.",
     rating: 5,
     icon: Icons.tailwindcss,
   },
   {
-    name: "AWS",
-    description:
-      "Utilize Amazon Web Services to build and deploy scalable, reliable, and secure applications.",
-    rating: 3,
-    icon: Icons.amazonaws,
-  },
-  {
-    name: "Bootstrap",
-    description:
-      "Quickly create responsive and appealing web designs using a popular CSS framework.",
-    rating: 2,
-    icon: Icons.bootstrap,
-  },
-  {
-    name: "MySQL",
-    description:
-      "Manage and organize relational databases efficiently for data-driven applications.",
-    rating: 2,
-    icon: Icons.mysql,
-  },
-  {
-    name: "Netlify",
-    description:
-      "Manage and organize relational databases efficiently for data-driven applications.",
+    name: "JWT & SAML",
+    description: "Secure authentication systems using JSON Web Tokens and SAML 2.0 protocols.",
     rating: 4,
-    icon: Icons.netlify,
+    icon: Icons.add, //TODO: Add JWT and SAML icons,
   },
 ];
 
