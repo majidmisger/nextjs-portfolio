@@ -26,6 +26,12 @@ export const skillsUnsorted: skillsInterface[] = [
     rating: 5,
     icon: Icons.PostgreSQL, 
   },
+    {
+    name: "MongoDB",
+    description: "NoSQL database designed for high availability and scalability with flexible schemas.",
+    rating: 4,
+    icon: Icons.mongodb, // Ensure this icon exists in Icons
+  },
   {
     name: "Redis",
     description: "In-memory datastore used for caching and reducing backend latency.",
