@@ -8,6 +8,7 @@ export type ValidSkills =
   | "MongoDB"
   | "Typescript"
   | "Javascript"
+  | "Apollo Server"
   | "HTML 5"
   | "CSS 3"
   | "React Native"
@@ -69,6 +70,7 @@ export type ValidCategory =
   | "Mobile Dev"
   | "Analytics"
   | "Data"
+  | "GraphQL"
   | "3D Modeling";
 
 export type ValidExpType = "Personal Project" | "Professional";

@@ -65,6 +65,11 @@ import {
   SiTailwindcss,
   SiTwitter,
   SiTypescript,
+  SiPostgresql,
+  SiRedis,
+  SiDocker,
+  SiJenkins,
+  SiGit,
 } from "react-icons/si";
 
 export const Icons = {
@@ -110,6 +115,11 @@ export const Icons = {
   html5: SiHtml5,
   javascript: SiJavascript,
   mongodb: SiMongodb,
+  PostgreSQL : SiPostgresql,
+  Redis : SiRedis, 
+  Docker : SiDocker,
+  Jenkins: SiJenkins,
+  Git: SiGit,
   mui: SiMui,
   mysql: SiMysql,
   nestjs: SiNestjs,

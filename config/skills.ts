@@ -24,13 +24,13 @@ export const skillsUnsorted: skillsInterface[] = [
     name: "PostgreSQL",
     description: "Advanced relational database used for analytics and high-concurrency APIs.",
     rating: 5,
-    icon: Icons.add, //TODO: Add PostgreSQL icon,
+    icon: Icons.PostgreSQL, 
   },
   {
     name: "Redis",
     description: "In-memory datastore used for caching and reducing backend latency.",
     rating: 5,
-    icon: Icons.add, //TODO: A,
+    icon: Icons.Redis,
   },
   {
     name: "Express.js",
@@ -51,28 +51,22 @@ export const skillsUnsorted: skillsInterface[] = [
     icon: Icons.react,
   },
   {
-    name: "Angular",
-    description: "Component-based frontend framework by Google (used in older projects).",
-    rating: 3,
-    icon: Icons.angular,
-  },
-  {
     name: "Docker",
     description: "Tool for packaging and deploying containerized applications in all environments.",
     rating: 4,
-    icon: Icons.add, //TODO: Add Docker icon,
+    icon: Icons.Docker, 
   },
   {
     name: "Jenkins",
     description: "CI/CD tool for automating testing and deployment pipelines.",
     rating: 3,
-    icon: Icons.add, //TODO: Add Jenkins icon
+    icon: Icons.Jenkins,
   },
   {
     name: "Git",
     description: "Version control system for managing and collaborating on codebases.",
     rating: 5,
-    icon: Icons.add, //TODO: Add Git icon,
+    icon: Icons.Git, //TODO: Add Git icon,
   },
   {
     name: "HTML5",
@@ -85,12 +79,6 @@ export const skillsUnsorted: skillsInterface[] = [
     description: "Styling language for designing responsive and engaging web layouts.",
     rating: 4,
     icon: Icons.css3,
-  },
-  {
-    name: "Tailwind CSS",
-    description: "Utility-first CSS framework to design clean and modern UIs fast.",
-    rating: 5,
-    icon: Icons.tailwindcss,
   },
   {
     name: "JWT & SAML",

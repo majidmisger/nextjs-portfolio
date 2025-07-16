@@ -18,10 +18,13 @@ import { siteConfig } from "@/config/site";
 import { featuredSkills } from "@/config/skills";
 import { cn } from "@/lib/utils";
 import majidImg from "@/public/majid-img.png";
+import { careerExperiences } from "@/config/career";
+import CareerCard from "@/components/career/career-card";
 
 export const metadata: Metadata = {
-  title: `${pagesConfig.home.metadata.title} | Backend-Focused Full Stack Developer`,
-  description: `${pagesConfig.home.metadata.description} Majid Niyaz's developer portfolio — showcasing expertise in building scalable, high-concurrency systems with Node.js, TypeScript, PostgreSQL, and Redis. Explore real-time analytics projects, automation tools, and clean backend architecture.`,
+  title: `${pagesConfig.home.metadata.title} | Majid Niyaz | Backend-Focused Full Stack Developer & System Architect`,
+  description: `${pagesConfig.home.metadata.description} Explore Majid Niyaz's portfolio — a backend-focused full stack developer with expertise in building scalable, high-performance systems using Node.js, TypeScript, PostgreSQL, and Redis. Dive into real-time analytics platforms, event-driven architectures, and production-ready tools designed for reliability and speed.`,
+  // description: `${pagesConfig.home.metadata.description} Majid Niyaz's developer portfolio — showcasing expertise in building scalable, high-concurrency systems with Node.js, TypeScript, PostgreSQL, and Redis. Explore real-time analytics projects, automation tools, and clean backend architecture.`,
   alternates: {
     canonical: siteConfig.url,
   },
@@ -94,7 +97,7 @@ export default function IndexPage() {
             delay={0.4}
             className="font-heading text-base sm:text-xl md:text-xl lg:text-2xl"
           >
-            Backend-Focused Full Stack Developer
+            Backend-Focused Full Stack Developer & System Architect
           </AnimatedText>
           <div className="mt-4 max-w-[42rem] text-center">
             <p className="leading-normal text-muted-foreground text-sm sm:text-base">
@@ -105,7 +108,7 @@ export default function IndexPage() {
           <div className="flex flex-col mt-10 items-center justify-center sm:flex-row sm:space-x-4 gap-3">
             <AnimatedText delay={0.6}>
               <Link
-                href={"https://github.com/namanbarkiya"}
+                href={"https://github.com/majidmisger"}
                 target="_blank"
                 className={cn(buttonVariants({ size: "lg" }))}
                 aria-label="View Majid Niyaz's GitHub profile"
@@ -163,7 +166,59 @@ export default function IndexPage() {
           </Link>
         </AnimatedText>
       </AnimatedSection>
-      
+
+      <AnimatedSection
+        direction="right"
+        className="container space-y-6 py-10 my-14"
+        id="career"
+      >
+        <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
+          <AnimatedText
+            as="h2"
+            className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl"
+          >
+            {pagesConfig.career.title}
+          </AnimatedText>
+          <AnimatedText
+            as="p"
+            delay={0.2}
+            className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7"
+          >
+            {pagesConfig.career.description}
+          </AnimatedText>
+        </div>
+<div
+  className={`mx-auto grid gap-4 ${
+    careerExperiences.length === 1
+      ? "place-items-center"
+      : "justify-center lg:grid-cols-3"
+  }`}
+>
+          {careerExperiences.map((exp, index) => (
+            <AnimatedSection
+              key={exp.position}
+              delay={0.1 * (index + 1)}
+              direction="up"
+            >
+              <CareerCard career={exp} />
+            </AnimatedSection>
+          ))}
+        </div>
+        <AnimatedText delay={0.4} className="flex justify-center">
+          <Link href="/career">
+            <Button variant={"outline"} className="rounded-xl">
+              <Icons.chevronDown className="mr-2 h-4 w-4" /> View All
+            </Button>
+          </Link>
+        </AnimatedText>
+        {/* <div className="mx-auto text-center md:max-w-[58rem]">
+                    <p className="leading-normal text-muted-foreground sm:text-lg sm:leading-7">
+                        See all the relevant experiences.
+                    </p>
+                </div> */}
+      </AnimatedSection>
+  
+
       <AnimatedSection
         direction="right"
         className="container space-y-6 py-10 my-14"

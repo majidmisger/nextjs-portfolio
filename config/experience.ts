@@ -2,7 +2,7 @@ import { ValidCategory, ValidExpType, ValidSkills } from "./constants";
 
 interface PagesInfoInterface {
   title: string;
-  imgArr: string[];
+  // imgArr: string[];
   description?: string;
 }
 
@@ -30,12 +30,12 @@ export interface ExperienceInterface {
 export const Experiences: ExperienceInterface[] = [
 {
   id: "mern-ecommerce",
-  companyName: "Personal Project",
+  companyName: "E-commerce",
   type: "Personal Project",
   category: ["Full Stack", "MERN"],
   shortDescription:
     "Built a full-featured e-commerce web application with cart, authentication, product management, and order tracking.",
-  websiteLink: "https://github.com/majidmisger/mern-ecommerce", // replace with actual repo or demo
+  websiteLink: "https://github.com/majidmisger/Ecommerce_MERN_STACK", // replace with actual repo or demo
   techStack: ["MongoDB", "Express.js", "React", "Node.js", "Redux"],
   startDate: new Date("2024-06-01"),
   endDate: new Date("2024-08-01"),
@@ -45,19 +45,19 @@ export const Experiences: ExperienceInterface[] = [
       title: "Product Listing + Filters",
       description:
         "Responsive product grid with filtering, sorting, and pagination.",
-      imgArr: ["/experience/mern/products.webp"],
+      // imgArr: ["/experience/mern/products.webp"],
     },
     {
       title: "Cart & Checkout Flow",
       description:
         "Fully functional shopping cart with add/remove/update, shipping, and checkout forms.",
-      imgArr: ["/experience/mern/cart.webp"],
+      // imgArr: ["/experience/mern/cart.webp"],
     },
     {
       title: "Admin Dashboard",
       description:
         "Admin portal to manage products, users, and orders with secure role-based access.",
-      imgArr: ["/experience/mern/admin.webp"],
+      // imgArr: ["/experience/mern/admin.webp"],
     },
   ],
   descriptionDetails: {
@@ -74,8 +74,36 @@ export const Experiences: ExperienceInterface[] = [
   },
 },
 {
+  id: "graphql-marketplace",
+  companyName: "GraphQL Marketplace",
+  type: "Personal Project",
+  category: ["Full Stack", "GraphQL", "API"],
+  shortDescription:
+    "Developed a full-stack marketplace API using GraphQL, Node.js, and MongoDB, enabling efficient querying and modular schema design.",
+  websiteLink: "https://github.com/majidmisger/graphql-node-react-mongo",
+  techStack: ["Node.js", "GraphQL", "Express.js", "MongoDB", "React", "Apollo Server"],
+  startDate: new Date("2022-01-01"),
+  endDate: new Date("2022-09-01"),
+  companyLogoImg: "/experience/semusi/graphql-marketplace.png", // optional custom logo path
+  pagesInfoArr: [],
+  descriptionDetails: {
+    paragraphs: [
+      "Designed and built a full-stack GraphQL API for a marketplace platform, supporting modular schema development, efficient data fetching, and client-side integration using Apollo.",
+      "Implemented reusable resolvers and context-based authentication to handle user, product, and order flows with role-based access control.",
+    ],
+    bullets: [
+      "Created a modular GraphQL schema for products, users, orders, and categories.",
+      "Integrated MongoDB for flexible and scalable data modeling of marketplace entities.",
+      "Used Apollo Client and Server for seamless data fetching between React frontend and Node.js backend.",
+      "Implemented JWT-based authentication and authorization at the resolver level.",
+      "Built custom directives and middleware for cleaner permission handling.",
+    ],
+  },
+},
+
+{
   id: "realtime-notify",
-  companyName: "Semusi Technologies",
+  companyName: "Realtime-notify",
   type: "Professional",
   category: ["Backend", "Real-Time", "API"],
   shortDescription:
@@ -100,7 +128,7 @@ export const Experiences: ExperienceInterface[] = [
 },
 {
   id: "user-behavior-tracker",
-  companyName: "Semusi Technologies",
+  companyName: "user-behavior-tracker",
   type: "Professional",
   category: ["Backend", "Analytics", "Data"],
   shortDescription:
@@ -120,31 +148,6 @@ export const Experiences: ExperienceInterface[] = [
       "Implemented tracking of click and navigation events across the app.",
       "Generated funnel reports with conversion rates and time-to-complete analysis.",
       "Used SQL builders for flexible event and attribute aggregation.",
-    ],
-  },
-},
-{
-  id: "dynamic-sql-builder",
-  companyName: "Semusi Technologies",
-  type: "Professional",
-  category: ["Backend", "Analytics", "Data"],
-  shortDescription:
-    "Built a dynamic SQL builder to power customizable, user-driven analytics dashboards.",
-  websiteLink: "", // Optional GitHub or internal link
-  techStack: ["Node.js", "PostgreSQL", "Redis", "Typescript"],
-  startDate: new Date("2022-01-01"),
-  endDate: new Date("2022-09-01"),
-  companyLogoImg: "/experience/semusi/sqlbuilder.png",
-  pagesInfoArr: [],
-  descriptionDetails: {
-    paragraphs: [
-      "Created a dynamic SQL engine that allowed users to define filters, projections, and events in real-time, powering flexible analytics dashboards.",
-      "Handled deeply nested JSONB queries and array filters with PostgreSQL and optimized execution plans.",
-    ],
-    bullets: [
-      "Enabled fully dynamic querying without joins using JSONB path expressions.",
-      "Supported real-time filtering, groupings, and aggregations across arbitrary user-defined conditions.",
-      "Improved analytics performance with Redis caching and dynamic execution plans.",
     ],
   },
 }

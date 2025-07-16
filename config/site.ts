@@ -6,7 +6,7 @@ export const siteConfig = {
     "Majid Niyaz's developer portfolio — showcasing expertise in building scalable, high-concurrency systems with Node.js, TypeScript, PostgreSQL, and Redis. Explore real-time analytics projects, automation tools, and clean backend architecture.",
   url: "https://nbarkiya.xyz",
   links: {
-    twitter: "https://x.com/namanbarkiya",
+    twitter: "https://x.com/Majid_riaz_",
     github: "https://github.com/majidmisger",
     linkedin: "https://www.linkedin.com/in/majid-misger/",
   },

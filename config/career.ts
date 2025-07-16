@@ -38,6 +38,6 @@ export const careerExperiences: CareerExperienceInterface[] = [
     ],
     skills: ["Node.js", "Typescript", "PostgreSQL", "Redis", "Express.js", "SSO (LDAP, OKTA)", "SAML 2.0"],
     companyUrl: "https://appice.ai/appice-about-us/",
-    logo: "/semusi-logo.jpeg",
+    logo: "/semusi-tech-logo.jpeg",
   }
 ];

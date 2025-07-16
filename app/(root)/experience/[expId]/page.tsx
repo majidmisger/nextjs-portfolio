@@ -18,7 +18,7 @@ interface ExperiencePageProps {
   };
 }
 
-const githubUsername = "namanbarkiya";
+const githubUsername = "majidmisger";
 
 export default function Experience({ params }: ExperiencePageProps) {
   let exp = Experiences.find((val) => val.id === params.expId);
@@ -72,7 +72,7 @@ export default function Experience({ params }: ExperiencePageProps) {
           >
             <Image
               src={majidImg}
-              alt={"naman"}
+              alt={"majid"}
               width={42}
               height={42}
               className="rounded-full bg-background"
@@ -88,14 +88,14 @@ export default function Experience({ params }: ExperiencePageProps) {
         </div>
       </div>
 
-      <Image
+      {/* <Image
         src={exp.companyLogoImg}
         alt={exp.companyName}
         width={720}
         height={405}
         className="my-8 rounded-md border bg-muted transition-colors"
         priority
-      />
+      /> */}
 
       <div className="mb-7 ">
         <h2 className="inline-block font-heading text-3xl leading-tight lg:text-3xl mb-2">
@@ -126,7 +126,7 @@ export default function Experience({ params }: ExperiencePageProps) {
             </h3>
             <div>
               <p>{page.description}</p>
-              {page.imgArr.map((img, ind) => (
+              {/* {page.imgArr.map((img, ind) => (
                 <Image
                   src={img}
                   key={ind}
@@ -136,7 +136,7 @@ export default function Experience({ params }: ExperiencePageProps) {
                   className="my-4 rounded-md border bg-muted transition-colors"
                   priority
                 />
-              ))}
+              ))} */}
             </div>
           </div>
         ))}
