@@ -72,7 +72,7 @@ export default function IndexPage() {
       />
 
       <section className="space-y-6 pb-8 pt-6 mb-0 md:pb-12 md:py-20 lg:py-32 h-screen flex items-center">
-        <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center -mt-20">
+        <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center -mt-0">
           <Image
             src={majidImg}
             height={100}
@@ -134,6 +134,7 @@ export default function IndexPage() {
           </AnimatedText>
         </div>
       </section>
+
       <AnimatedSection
         className="container space-y-6 bg-muted py-10"
         id="skills"
@@ -162,6 +163,7 @@ export default function IndexPage() {
           </Link>
         </AnimatedText>
       </AnimatedSection>
+      
       <AnimatedSection
         direction="right"
         className="container space-y-6 py-10 my-14"
