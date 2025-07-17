@@ -131,6 +131,16 @@ export default function IndexPage() {
                 <Icons.contact className="w-4 h-4 mr-2" /> Contact
               </Link>
             </AnimatedText>
+              <AnimatedText delay={1.0}>
+                  <a
+                    href="/MajidNiyaz_Resume.pdf"
+                    download
+                    className={cn(buttonVariants({ variant: "secondary", size: "lg" }))}
+                    aria-label="Download Resume"
+                  >
+                    <Icons.download className="w-4 h-4 mr-2" /> Download Resume
+                  </a>
+                </AnimatedText>                     
           </div>
           <AnimatedText delay={1.2}>
             <Icons.chevronDown className="h-6 w-6 mt-10" />

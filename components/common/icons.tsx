@@ -30,6 +30,7 @@ import {
   Trash,
   User,
   X,
+  Download,
   Zap,
 } from "lucide-react";
 import { AiFillStar } from "react-icons/ai";
@@ -77,6 +78,7 @@ export const Icons = {
   gitRepoIcon: BookMarked,
   gitOrgBuilding: Building,
   gitBranch: IoIosGitBranch,
+  download: Download,
   close: X,
   spinner: Loader2,
   chevronLeft: ChevronLeft,
