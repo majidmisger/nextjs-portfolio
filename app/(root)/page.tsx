@@ -273,6 +273,32 @@ export default function IndexPage() {
                     </p>
                 </div> */}
       </AnimatedSection>
+
+      <AnimatedSection delay={0.5} className="text-center py-16 px-4 bg-muted rounded-xl my-8">
+  <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+    Open to Full-Time Backend or Full Stack Roles
+  </h2>
+  <p className="text-muted-foreground text-base sm:text-lg max-w-2xl mx-auto">
+    I’m actively looking for opportunities as a backend-focused full stack developer.
+    If you’re hiring or have an exciting challenge, let’s connect!
+  </p>
+  <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center">
+    <a
+      href="/MajidNiyaz_Resume.pdf"
+      download
+      className={cn(buttonVariants({ variant: "secondary", size: "lg" }))}
+    >
+      📄 Download Resume
+    </a>
+    <Link
+      href="/contact"
+      className={cn(buttonVariants({ variant: "default", size: "lg" }))}
+    >
+      ✉️ Contact Me
+    </Link>
+  </div>
+</AnimatedSection>
+
   
     </ClientPageWrapper>
   );
