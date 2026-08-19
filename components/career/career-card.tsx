@@ -23,17 +23,23 @@ export default function CareerCard({ career }: CareerCardProps) {
   };
 
   const dateRange = `${formatDate(career.startDate)} - ${formatDate(career.endDate)}`;
+  const isSvgLogo = career.logo?.endsWith(".svg");
 
   return (
-    <div className="relative p-6 max-w-sm bg-background border border-border rounded-lg mx-auto">
-      <div className="relative w-full h-[200px]">
-        {career.logo && (
+    <div className="relative p-6 max-w-sm bg-background border border-border rounded-lg mx-auto h-full">
+      <div className="relative w-full h-[180px] rounded-lg border border-border bg-white overflow-hidden">
+        {career.logo ? (
           <Image
-            className="rounded-lg border border-border object-cover"
+            className="object-contain p-6"
             src={career.logo}
-            alt={career.company}
+            alt={`${career.company} logo`}
             fill
+            unoptimized={isSvgLogo}
           />
+        ) : (
+          <div className="flex h-full items-center justify-center">
+            <Icons.work className="h-10 w-10 text-muted-foreground" />
+          </div>
         )}
       </div>
 
@@ -44,6 +50,11 @@ export default function CareerCard({ career }: CareerCardProps) {
         <p className="text-sm font-medium text-muted-foreground">
           {career.position} • {career.location}
         </p>
+        {(career.product || career.team) && (
+          <p className="text-xs font-medium text-foreground/80">
+            {[career.product, career.team].filter(Boolean).join(" · ")}
+          </p>
+        )}
         <p className="text-xs text-muted-foreground">{dateRange}</p>
         <p className="line-clamp-3 text-sm text-muted-foreground">
           {career.description?.[0]}
@@ -54,7 +65,7 @@ export default function CareerCard({ career }: CareerCardProps) {
         {career.companyUrl && (
           <Link href={career.companyUrl} target="_blank">
             <Button variant={"default"} className="mt-2">
-              Visit Company
+              Visit Product
               <Icons.chevronRight className="w-4 ml-1" />
             </Button>
           </Link>

@@ -29,6 +29,59 @@ export interface ExperienceInterface {
 
 export const Experiences: ExperienceInterface[] = [
 {
+  id: "vwo-website-optimizer",
+  companyName: "VWO Website Optimizer",
+  type: "Professional",
+  category: ["Data Platform", "Analytics", "Backend"],
+  shortDescription:
+    "Data Layer work on VWO at Wingify — experiment reporting, visitor analytics, and conversion insights on BigQuery, ClickHouse, Bigtable, and GCS.",
+  websiteLink: "https://vwo.com/platform/",
+  techStack: [
+    "BigQuery",
+    "ClickHouse",
+    "Bigtable",
+    "GCS",
+    "Kafka",
+    "GCP",
+    "Node.js",
+    "Typescript",
+    "Java",
+  ],
+  startDate: new Date("2025-12-01"),
+  endDate: new Date(),
+  companyLogoImg: "/experience/vwo/logo.svg",
+  pagesInfoArr: [
+    {
+      title: "Experiment reporting",
+      description:
+        "Warehouse and OLAP models that turn A/B test, funnel, and conversion events into trusted Website Optimizer reports.",
+    },
+    {
+      title: "Query engine",
+      description:
+        "Query paths across BigQuery, ClickHouse, and Bigtable so high-volume optimizer metrics stay fast under concurrent reads.",
+    },
+    {
+      title: "Event pipelines",
+      description:
+        "Kafka and GCS pipelines that ingest campaign, visitor, and conversion events into the VWO data platform.",
+    },
+  ],
+  descriptionDetails: {
+    paragraphs: [
+      "VWO is Wingify’s digital experience platform for A/B testing, visitor behavior analysis, and conversion-rate optimization. I work at Wingify on VWO, in the Data Layer team under Engineering.",
+      "The Data Layer owns the analytics foundation behind Website Optimizer: ingesting experiment and visitor events, modeling them for reporting, and serving low-latency metrics that product, growth, and customer teams depend on.",
+    ],
+    bullets: [
+      "Built and maintained ETL pipelines that land Website Optimizer events in GCS and load them into BigQuery and ClickHouse.",
+      "Implemented query paths on BigQuery, ClickHouse, and Bigtable so experiment and funnel metrics stay responsive at high concurrency.",
+      "Streamed campaign, visitor, and conversion events through Kafka into durable analytics stores.",
+      "Operated GCP workflows for storage, warehousing, and operational data that power VWO reporting.",
+      "Partnered with product engineering to improve freshness and reliability of Website Optimizer dashboards.",
+    ],
+  },
+},
+{
   id: "mern-ecommerce",
   companyName: "E-commerce",
   type: "Personal Project",
@@ -39,7 +92,7 @@ export const Experiences: ExperienceInterface[] = [
   techStack: ["MongoDB", "Express.js", "React", "Node.js", "Redux"],
   startDate: new Date("2024-06-01"),
   endDate: new Date("2024-08-01"),
-  companyLogoImg: "/experience/mern/logo.png",
+  companyLogoImg: "",
   pagesInfoArr: [
     {
       title: "Product Listing + Filters",
@@ -84,7 +137,7 @@ export const Experiences: ExperienceInterface[] = [
   techStack: ["Node.js", "GraphQL", "Express.js", "MongoDB", "React", "Apollo Server"],
   startDate: new Date("2022-01-01"),
   endDate: new Date("2022-09-01"),
-  companyLogoImg: "/experience/semusi/graphql-marketplace.png", // optional custom logo path
+  companyLogoImg: "",
   pagesInfoArr: [],
   descriptionDetails: {
     paragraphs: [
@@ -112,7 +165,7 @@ export const Experiences: ExperienceInterface[] = [
   techStack: ["Node.js", "Redis", "PostgreSQL", "Express.js", "Typescript"],
   startDate: new Date("2023-04-01"),
   endDate: new Date("2023-08-01"),
-  companyLogoImg: "/experience/realtime/logo.png", // Replace if needed
+  companyLogoImg: "",
   pagesInfoArr: [],
   descriptionDetails: {
     paragraphs: [
@@ -137,7 +190,7 @@ export const Experiences: ExperienceInterface[] = [
   techStack: ["Node.js", "PostgreSQL", "Typescript", "Express.js", "Chart.js"],
   startDate: new Date("2022-11-01"),
   endDate: new Date("2023-02-01"),
-  companyLogoImg: "/experience/analytics/logo.png",
+  companyLogoImg: "",
   pagesInfoArr: [],
   descriptionDetails: {
     paragraphs: [

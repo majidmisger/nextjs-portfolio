@@ -11,16 +11,23 @@ interface ProjectCardProps {
 }
 
 export default function ProjectCard({ project }: ProjectCardProps) {
+  const isSvgLogo =
+    typeof project.companyLogoImg === "string" &&
+    project.companyLogoImg.endsWith(".svg");
+
   return (
-    <div className="relative p-6 max-w-sm bg-background border border-border rounded-lg">
-      {/* <div className="relative w-full h-[200px]">
-        <Image
-          className="rounded-lg border border-border object-cover"
-          src={project.companyLogoImg}
-          alt="img"
-          fill
-        />
-      </div> */}
+    <div className="relative p-6 max-w-sm bg-background border border-border rounded-lg h-full">
+      {project.companyLogoImg && (
+        <div className="relative w-full h-[160px] rounded-lg border border-border bg-white overflow-hidden mb-1">
+          <Image
+            className="object-contain p-10"
+            src={project.companyLogoImg}
+            alt={`${project.companyName} logo`}
+            fill
+            unoptimized={isSvgLogo}
+          />
+        </div>
+      )}
       <div className="pt-5 space-y-3">
         <h5 className="text-2xl font-bold tracking-tight text-foreground">
           {project.companyName}

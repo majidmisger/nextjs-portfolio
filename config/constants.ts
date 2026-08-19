@@ -56,7 +56,13 @@ export type ValidSkills =
   | "SSO (LDAP, OKTA)"
   | "SAML 2.0"
   | "Chart.js"
-  | "PHP";
+  | "PHP"
+  | "BigQuery"
+  | "ClickHouse"
+  | "Bigtable"
+  | "GCS"
+  | "Kafka"
+  | "GCP";
 
 export type ValidCategory =
   | "Full Stack"
@@ -70,6 +76,7 @@ export type ValidCategory =
   | "Mobile Dev"
   | "Analytics"
   | "Data"
+  | "Data Platform"
   | "GraphQL"
   | "3D Modeling";
 

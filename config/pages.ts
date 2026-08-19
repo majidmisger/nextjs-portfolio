@@ -23,19 +23,20 @@ export const pagesConfig: PagesConfig = {
   },
   skills: {
     title: "Skills",
-    description: "Key skills that define my professional identity.",
+    description: "Data platform and backend skills I use to build analytics systems at scale.",
     metadata: {
       title: "Skills",
       description:
-        "Majid Niyaz's key skills that define his professional identity.",
+        "Majid Niyaz's data platform skills — BigQuery, ClickHouse, Bigtable, GCS, Kafka, and Node.js.",
     },
   },
   experience: {
     title: "Experience",
-    description: "Highlighting career journey and impactful projects.",
+    description: "Professional work across data platforms, analytics systems, and backend products.",
     metadata: {
       title: "Experience",
-      description: "Majid Niyaz's experience in building web applications.",
+      description:
+        "Majid Niyaz's experience building data platforms and backend systems, including VWO Website Optimizer.",
     },
   },
   contact: {
@@ -65,10 +66,11 @@ export const pagesConfig: PagesConfig = {
   },
   career: {
     title: "Career Timeline",
-    description: "Professional journey and experience timeline.",
+    description: "Roles and impact across data platforms and product engineering.",
     metadata: {
       title: "Career Timeline",
-      description: "Majid Niyaz's professional journey and career timeline.",
+      description:
+        "Majid Niyaz's career timeline — Data Platform Engineer at Wingify, working on VWO with the Data Layer team in Engineering.",
     },
   },
 };

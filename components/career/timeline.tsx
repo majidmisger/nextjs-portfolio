@@ -54,6 +54,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
                   alt={experience.company}
                   fill
                   className="object-contain p-2"
+                  unoptimized={experience.logo.endsWith(".svg")}
                 />
               </div>
             ) : (
@@ -101,6 +102,13 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
                     </Link>
                   )}
                 </div>
+                {(experience.product || experience.team) && (
+                  <div className="text-xs sm:text-sm text-foreground/80">
+                    {[experience.product, experience.team]
+                      .filter(Boolean)
+                      .join(" · ")}
+                  </div>
+                )}
                 <div className="text-xs sm:text-sm text-muted-foreground">
                   {experience.location}
                 </div>

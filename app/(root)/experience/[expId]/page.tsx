@@ -96,6 +96,21 @@ export default function Experience({ params }: ExperiencePageProps) {
         className="my-8 rounded-md border bg-muted transition-colors"
         priority
       /> */}
+      {exp.companyLogoImg && (
+        <div className="relative my-8 h-48 w-full overflow-hidden rounded-md border bg-white">
+          <Image
+            src={exp.companyLogoImg}
+            alt={`${exp.companyName} logo`}
+            fill
+            className="object-contain p-8"
+            unoptimized={
+              typeof exp.companyLogoImg === "string" &&
+              exp.companyLogoImg.endsWith(".svg")
+            }
+            priority
+          />
+        </div>
+      )}
 
       <div className="mb-7 ">
         <h2 className="inline-block font-heading text-3xl leading-tight lg:text-3xl mb-2">

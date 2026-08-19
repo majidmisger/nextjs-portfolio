@@ -86,6 +86,7 @@ export default function CareerDetailPage({ params }: CareerDetailPageProps) {
                   fill
                   className="object-contain p-2"
                   priority
+                  unoptimized={career.logo.endsWith(".svg")}
                 />
               </div>
             ) : (
@@ -113,6 +114,11 @@ export default function CareerDetailPage({ params }: CareerDetailPageProps) {
                   </Link>
                 )}
               </div>
+              {(career.product || career.team) && (
+                <p className="text-sm text-foreground/80">
+                  {[career.product, career.team].filter(Boolean).join(" · ")}
+                </p>
+              )}
               <p className="text-sm text-muted-foreground">{career.location}</p>
             </div>
           </div>

@@ -5,7 +5,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: "Majid Niyaz Portfolio",
     short_name: "Majid's Portfolio",
     description:
-      "Majid Niyaz's modern developer portfolio built with Next.js - available as an open-source template",
+      "Majid Niyaz's Data Platform Engineer portfolio — BigQuery, ClickHouse, GCS, and VWO.",
     start_url: "/",
     display: "standalone",
     background_color: "#ffffff",

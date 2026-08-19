@@ -22,9 +22,8 @@ import { careerExperiences } from "@/config/career";
 import CareerCard from "@/components/career/career-card";
 
 export const metadata: Metadata = {
-  title: `${pagesConfig.home.metadata.title} | Majid Niyaz | Backend-Focused Full Stack Developer & System Architect`,
-  description: `${pagesConfig.home.metadata.description} Explore Majid Niyaz's portfolio — a backend-focused full stack developer with expertise in building scalable, high-performance systems using Node.js, TypeScript, PostgreSQL, and Redis. Dive into real-time analytics platforms, event-driven architectures, and production-ready tools designed for reliability and speed.`,
-  // description: `${pagesConfig.home.metadata.description} Majid Niyaz's developer portfolio — showcasing expertise in building scalable, high-concurrency systems with Node.js, TypeScript, PostgreSQL, and Redis. Explore real-time analytics projects, automation tools, and clean backend architecture.`,
+  title: `${pagesConfig.home.metadata.title} | Majid Niyaz | Data Platform Engineer`,
+  description: `${pagesConfig.home.metadata.description} Explore Majid Niyaz's portfolio — a Data Platform Engineer at Wingify, working on VWO with the Data Layer team in Engineering. Building scalable analytics systems with BigQuery, ClickHouse, Bigtable, GCS, and Kafka.`,
   alternates: {
     canonical: siteConfig.url,
   },
@@ -38,8 +37,17 @@ export default function IndexPage() {
     name: siteConfig.authorName,
     url: siteConfig.url,
     image: siteConfig.ogImage,
-    jobTitle: "Full Stack Developer",
-    sameAs: [siteConfig.links.github, siteConfig.links.twitter],
+    jobTitle: "Data Platform Engineer",
+    worksFor: {
+      "@type": "Organization",
+      name: "Wingify",
+      url: "https://wingify.com",
+    },
+    sameAs: [
+      siteConfig.links.github,
+      siteConfig.links.twitter,
+      siteConfig.links.linkedin,
+    ],
   };
 
   // Structured data for website as a software application (template)
@@ -82,7 +90,7 @@ export default function IndexPage() {
             width={100}
             sizes="100vw"
             className="bg-primary rounded-full mb-0 h-auto md:mb-2 w-[60%] max-w-[16rem] border-8 border-primary"
-            alt="Majid Niyaz - Full Stack Developer Portfolio"
+            alt="Majid Niyaz - Data Platform Engineer Portfolio"
             priority
           />
           <AnimatedText
@@ -97,11 +105,11 @@ export default function IndexPage() {
             delay={0.4}
             className="font-heading text-base sm:text-xl md:text-xl lg:text-2xl"
           >
-            Backend-Focused Full Stack Developer & System Architect
+            Data Platform Engineer
           </AnimatedText>
           <div className="mt-4 max-w-[42rem] text-center">
             <p className="leading-normal text-muted-foreground text-sm sm:text-base">
-              Majid Niyaz's developer portfolio — showcasing expertise in building scalable, high-concurrency systems with Node.js, TypeScript, PostgreSQL, and Redis. Explore real-time analytics projects, automation tools, and clean backend architecture..
+              Data Platform Engineer at Wingify, working on VWO with the Data Layer team in Engineering. Building scalable analytics systems with BigQuery, ClickHouse, Bigtable, and GCS.
             </p>
           </div>
 
@@ -201,12 +209,14 @@ export default function IndexPage() {
   className={`mx-auto grid gap-4 ${
     careerExperiences.length === 1
       ? "place-items-center"
+      : careerExperiences.length === 2
+      ? "max-w-3xl sm:grid-cols-2"
       : "justify-center lg:grid-cols-3"
   }`}
 >
           {careerExperiences.map((exp, index) => (
             <AnimatedSection
-              key={exp.position}
+              key={exp.id}
               delay={0.1 * (index + 1)}
               direction="up"
             >
@@ -276,11 +286,11 @@ export default function IndexPage() {
 
       <AnimatedSection delay={0.5} className="text-center py-16 px-4 bg-muted rounded-xl my-8">
   <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-    Open to Full-Time Backend or Full Stack Roles
+    Building data platforms that scale
   </h2>
   <p className="text-muted-foreground text-base sm:text-lg max-w-2xl mx-auto">
-    I’m actively looking for opportunities as a backend-focused full stack developer.
-    If you’re hiring or have an exciting challenge, let’s connect!
+    I design analytics infrastructure with BigQuery, ClickHouse, Bigtable, and GCS.
+    If you are working on high-scale data systems, let&apos;s connect.
   </p>
   <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center">
     <a
